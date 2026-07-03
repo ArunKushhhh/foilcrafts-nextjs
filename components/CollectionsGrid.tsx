@@ -172,7 +172,7 @@ export function CollectionsGrid({
                           <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                         </svg>
                       </div>
-                      <div className="ii-teaser__count">+{hiddenCount} More Designs</div>
+                      <div className="ii-teaser__count">More Articles</div>
                       <div className="ii-teaser__sub">TRADE PARTNERS ONLY</div>
                       <span className="ii-teaser__btn">Partner Login →</span>
                     </div>
