@@ -9,8 +9,18 @@ import {
 import { Marquee } from "@/components/Marquee";
 import { content } from "@/lib/content";
 
-export const metadata = {
-  title: "About — Foil Crafts",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About — Italian Foils, Indian Craftsmanship",
+  description:
+    "Three generations of leather foiling from a single Noida atelier. Authorised C.F.M. distributor since 1994 — Italian transfer foils, embossing, and bespoke leather goods.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Foil Crafts — Italian Foils, Indian Craftsmanship",
+    description:
+      "Three generations of leather foiling from a single Noida atelier. Authorised C.F.M. distributor since 1994.",
+  },
 };
 
 export default function AboutPage() {

@@ -3,8 +3,18 @@ import { Marquee } from "@/components/Marquee";
 import { ItemsInline } from "@/components/ItemsInline";
 import { content } from "@/lib/content";
 
-export const metadata = {
-  title: "Cut Plates and Embossing — Foil Crafts",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cut Plates & Embossing Dies",
+  description:
+    "In-house library of cut plates and embossing dies for leather finishing — used independently or as the structural layer beneath transfer foiling. Foil Crafts, Noida.",
+  alternates: { canonical: "/cut-plates-embossing" },
+  openGraph: {
+    title: "Cut Plates & Embossing Dies | Foil Crafts",
+    description:
+      "Cut plates and embossing dies for leather — used independently or beneath transfer foiling.",
+  },
 };
 
 export default function CutPlatesEmbossingPage() {

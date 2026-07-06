@@ -6,8 +6,18 @@ import { content } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = {
-  title: "Digital Printing — Foil Crafts",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital Printing — Direct-to-Leather Prints",
+  description:
+    "Direct-to-leather digital printing on finished hides. Curated prints and custom artwork accepted for production. Foil Crafts, Noida.",
+  alternates: { canonical: "/digital-printing" },
+  openGraph: {
+    title: "Digital Printing — Direct-to-Leather | Foil Crafts",
+    description:
+      "Direct-to-leather digital printing capability — curated prints and custom artwork on finished hides.",
+  },
 };
 
 export default async function DigitalPrintingPage() {

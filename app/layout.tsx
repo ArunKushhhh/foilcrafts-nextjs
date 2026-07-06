@@ -28,10 +28,32 @@ const jbm = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${content.brand.name} — ${content.brand.tagline}`,
+  metadataBase: new URL("https://www.foilcrafts.com"),
+  title: {
+    default: `${content.brand.name} — ${content.brand.tagline}`,
+    template: `%s | ${content.brand.name}`,
+  },
   description: content.brand.description,
-  // Staging gate — set to public in production via env. See SUPABASE-SETUP.md.
-  robots: { index: false, follow: false, nocache: true },
+  robots: { index: true, follow: true },
+  keywords: [
+    "Italian transfer foils",
+    "foil stamping India",
+    "leather foiling",
+    "CFM foils",
+    "embossing plates",
+    "digital printing leather",
+    "Foil Crafts",
+    "Noida",
+    "transfer foil",
+    "hot stamping foil",
+  ],
+  openGraph: {
+    title: `${content.brand.name} — ${content.brand.tagline}`,
+    description: content.brand.description,
+    siteName: content.brand.name,
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

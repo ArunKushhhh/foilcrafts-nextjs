@@ -3,8 +3,18 @@ import { Marquee } from "@/components/Marquee";
 import { PageHero, ContactCTA } from "@/components/sections";
 import { content } from "@/lib/content";
 
-export const metadata = {
-  title: "Catalogs — Foil Crafts",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Catalogs — Download Collection PDFs",
+  description:
+    "Download Foil Crafts collection catalogues — the full Italian transfer foil archive on paper, photographed at the Noida atelier. Ready for your design table.",
+  alternates: { canonical: "/catalogs" },
+  openGraph: {
+    title: "Catalogs — Download Collection PDFs | Foil Crafts",
+    description:
+      "The full Italian transfer foil archive on paper — download collection PDFs for your design table.",
+  },
 };
 
 const html = (s: string) => ({ dangerouslySetInnerHTML: { __html: s } });

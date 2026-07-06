@@ -6,8 +6,18 @@ import { content } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = {
-  title: "Foiling — 19 families — Foil Crafts",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Foiling — 19 Italian Transfer Foil Families",
+  description:
+    "Browse 19 families of Italian C.F.M. transfer foils — metallic, holographic, animal print, abstract, crackle, floral, acid, distress, and more. Authorised distributor, Noida.",
+  alternates: { canonical: "/foiling" },
+  openGraph: {
+    title: "Foiling — 19 Italian Transfer Foil Families | Foil Crafts",
+    description:
+      "The complete C.F.M. transfer-foil archive — 19 families of Italian foils for leather finishing.",
+  },
 };
 
 /* Pull the filter list from content.ts so new families are picked up automatically */
